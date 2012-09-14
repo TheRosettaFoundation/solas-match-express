@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solas Match Express</string>
+    <string name="welcome">Welcome to Solas Match Express</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="email">Email:</string>
+    <string name="pass">Password:</string>
+    <string name="base_webservice_url">http://193.1.97.45/SOLAS-Match/api</string>
+</resources>

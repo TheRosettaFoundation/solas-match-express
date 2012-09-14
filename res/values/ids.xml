@@ -1,0 +1,4 @@
+<resources>
+    <item name="passwordFeild" type="id"/>
+    <item name="emailFeild" type="id"/>
+</resources>

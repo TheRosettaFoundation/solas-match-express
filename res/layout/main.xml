@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:binding="http://www.gueei.com/android-binding/"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent">
+     <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:text="@string/welcome" android:gravity="center"
+                    android:layout_margin="5dp" android:padding="5dp"/>
+        <ImageView  android:layout_width="160dp" android:layout_height="120dp"
+                    android:layout_gravity="center" android:layout_margin="5dp"
+                    android:padding="5dp" binding:source="Logo">
+        </ImageView>
+        <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginTop="15dp">
+         <TextView android:layout_weight=".25" android:layout_margin="5dp" android:padding="5dp"
+                 android:layout_height="wrap_content" android:layout_width="wrap_content"
+                 android:text="@string/email" android:gravity="center"/>
+         <EditText android:layout_weight=".75" android:layout_margin="5dp" android:padding="5dp"
+                 android:layout_height="wrap_content" android:layout_width="wrap_content"
+                 binding:text="email" android:id="@id/emailFeild"/>
+        </LinearLayout>
+         <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginTop="5dp">
+             <TextView android:layout_weight=".25" android:layout_margin="5dp" android:padding="5dp"
+                       android:layout_height="wrap_content" android:layout_width="wrap_content"
+                       android:text="@string/pass" android:gravity="center"/>
+             <EditText android:layout_weight=".75" android:layout_margin="5dp" android:padding="5dp"
+                       android:layout_height="wrap_content" android:layout_width="wrap_content"
+                       binding:text="password"  android:id="@id/passwordFeild"/>
+         </LinearLayout>
+        <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginTop="5dp">
+            <Button android:layout_weight=".5" android:layout_margin="5dp" android:padding="5dp"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"
+                    android:text="@string/register" binding:onClick="register"/>
+            <Button android:layout_weight=".5" android:layout_margin="5dp" android:padding="5dp"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"
+                    android:text="@string/login" binding:onClick="login"/>
+        </LinearLayout>
+     </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
