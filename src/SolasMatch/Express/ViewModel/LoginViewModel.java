@@ -16,10 +16,12 @@ import gueei.binding.Command;
 import gueei.binding.Observable;
 import gueei.binding.observables.StringObservable;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -60,30 +62,36 @@ public class LoginViewModel extends ViewModel {
 
         @Override
         public void Invoke(View view, Object... objects) {
+            if(!checkNetworkAvailable()){
+                Toast toast =Toast.makeText(getApplicationContext(), "Please enable internet access", Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
+            }else{
+                // move to AsyncTask
+                ObjectMapper mapper = new ObjectMapper();
+                Login login =new Login();
+                login.setEmail(email.get());
+                login.setPass(password.get());
+                try{
 
-            ObjectMapper mapper = new ObjectMapper();
-            Login login =new Login();
-            login.setEmail(email.get());
-            login.setPass(password.get());
-            try{
-                URL url = new URL(getString(R.string.base_webservice_url)+"/v0/login/");
-                URLConnection conn = url.openConnection();
-                conn.setDoOutput(true);
-                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
-                mapper.writeValue(wr,login);
-                user.set(mapper.readValue(conn.getInputStream(),User.class));
-                wr.close();
-            }catch (Exception e){}
+                    URL url = new URL(getString(R.string.base_webservice_url)+"/v0/login/");
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setRequestMethod("POST");//not needed but used for expliced meaning.
+                    conn.setDoOutput(true);// also sets the connect to post by default.
+                    mapper.writeValue(new OutputStreamWriter(new BufferedOutputStream(conn.getOutputStream())), login);
+                    user.set(mapper.readValue(new BufferedInputStream(conn.getInputStream()), User.class));
+                }catch (Exception e){}
 
-            String message = getString(R.string.login_success);
-            if(user.isNull()) message = getString(R.string.login_failure);
+                String message = getString(R.string.login_success);
+                if(user.isNull()) message = getString(R.string.login_failure);
 
-            Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
-            toast.setGravity(Gravity.CENTER,0,0);
-            toast.show();
-            if(!user.isNull()){
-                ((Activity)getBaseContext()).finish();
-                getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
+                Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
+                if(!user.isNull()){
+                    ((Activity)getBaseContext()).finish();
+                    getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
+                }
             }
         }
     };
@@ -91,30 +99,34 @@ public class LoginViewModel extends ViewModel {
     public final Command register = new Command() {
         @Override
         public void Invoke(View view, Object... objects) {
-            ObjectMapper mapper = new ObjectMapper();
-            Login login = new Login();
-            login.setEmail(email.get());
-            login.setPass(password.get());
-            try{
-                URL url = new URL(getString(R.string.base_webservice_url)+"/v0/register/");
-                URLConnection conn = url.openConnection();
-                conn.setDoOutput(true);
-                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
-                mapper.writeValue(wr,login);
-                user.set(mapper.readValue(conn.getInputStream(),User.class));
-                wr.close();
-            }catch (Exception e){}
-
-            String message = getString(R.string.register_success);
-            if(user.isNull()) message = getString(R.string.register_failure);
-
-            Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
-            toast.setGravity(Gravity.CENTER,0,0);
-            toast.show();
-            if(!user.isNull()){
-                SharedViewModel.getInstance(getApplicationContext()).getCurrentUser().set(user.get());
-                ((Activity)getBaseContext()).finish();
-                getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
+            if(!checkNetworkAvailable()){
+                Toast toast =Toast.makeText(getApplicationContext(), "Please enable internet access", Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
+            }else{
+                // move to AsyncTask
+                ObjectMapper mapper = new ObjectMapper();
+                Login login = new Login();
+                login.setEmail(email.get());
+                login.setPass(password.get());
+                try{
+                    URL url = new URL(getString(R.string.base_webservice_url)+"/v0/register/");
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                    conn.setRequestMethod("POST");//not needed but used for expliced meaning.
+                    conn.setDoOutput(true);// also sets the connect to post by default.
+                    mapper.writeValue(new OutputStreamWriter(new BufferedOutputStream(conn.getOutputStream())), login);
+                    user.set(mapper.readValue(new BufferedInputStream(conn.getInputStream()), User.class));
+                }catch (Exception e){}
+                String message = getString(R.string.register_success);
+                if(user.isNull()) message = getString(R.string.register_failure);
+                Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
+                if(!user.isNull()){
+                    SharedViewModel.getInstance(getApplicationContext()).getCurrentUser().set(user.get());
+                    ((Activity)getBaseContext()).finish();
+                    getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
+                }
             }
 
         }

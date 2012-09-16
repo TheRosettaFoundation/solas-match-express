@@ -2,6 +2,8 @@ package SolasMatch.Express.ViewModel;
 
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,5 +16,10 @@ public abstract class ViewModel  extends ContextWrapper{
 
     public ViewModel(Context base) {
         super(base);
+    }
+    public boolean checkNetworkAvailable() {
+        ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+        return (networkInfo != null && networkInfo.isConnected());
     }
 }
