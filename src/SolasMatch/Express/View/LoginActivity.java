@@ -22,6 +22,5 @@ public class LoginActivity extends Activity {
         ViewModel vm = new LoginViewModel(this);
         Binder.init(this.getApplication());
         Binder.setAndBindContentView(this, R.layout.login, vm);
-        //setContentView(R.layout.login);
     }
 }

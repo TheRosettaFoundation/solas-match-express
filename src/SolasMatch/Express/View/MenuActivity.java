@@ -1,7 +1,11 @@
 package SolasMatch.Express.View;
 
+import SolasMatch.Express.R;
+import SolasMatch.Express.ViewModel.MenuViewModel;
+import SolasMatch.Express.ViewModel.ViewModel;
 import android.app.Activity;
 import android.os.Bundle;
+import gueei.binding.Binder;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,5 +17,8 @@ import android.os.Bundle;
 public class MenuActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ViewModel vm = new MenuViewModel(this);
+        Binder.init(this.getApplication());
+        Binder.setAndBindContentView(this, R.layout.menu, vm);
     }
 }

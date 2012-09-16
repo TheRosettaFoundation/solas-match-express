@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:binding="http://www.gueei.com/android-binding/"
+              android:orientation="vertical"   android:gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical">
+        <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                       android:orientation="vertical" >
+            <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                        android:text="@string/menu_message" android:gravity="center"
+                        android:layout_margin="5dp" android:padding="5dp"
+                        android:textStyle="bold"/>
+            <LinearLayout  android:layout_width="fill_parent" android:layout_height="100dp"
+                           android:orientation="vertical" android:layout_marginTop="5dp">
+                <LinearLayout   android:layout_width="fill_parent" android:layout_height="25dp"
+                                android:orientation="horizontal" android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp">
+                    <TextView   android:layout_width="fill_parent" android:layout_height="fill_parent"
+                                android:text="@string/featured" android:gravity="left"
+                                android:textStyle="bold" android:layout_weight=".6"/>
+                    <Button android:layout_weight=".4" android:padding="1dp"
+                            android:layout_height="fill_parent" android:layout_width="fill_parent"
+                            android:text="@string/view_task" binding:onClick="viewFeturedTask"
+                            android:gravity="center"/>
+
+                </LinearLayout>
+                <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                            binding:text="feturedTask" android:gravity="right"
+                            android:layout_margin="5dp" android:padding="5dp"
+                            />
+
+            </LinearLayout>
+
+            <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                           android:orientation="vertical" android:layout_marginTop="5dp"
+                           android:gravity="center_horizontal">
+                <Button android:layout_weight=".5" android:padding="5dp"
+                        android:layout_height="wrap_content" android:layout_width="fill_parent"
+                        android:text="@string/search_for_tasks" binding:onClick="searchForTasks"
+                        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"   android:layout_marginBottom="2dp"/>
+                <Button android:layout_weight=".5" android:padding="5dp"
+                        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"   android:layout_marginBottom="2dp"
+                        android:layout_height="wrap_content" android:layout_width="fill_parent"
+                        android:text="@string/search_for_orgs" binding:onClick="searchForOrgs"/>
+                <Button android:layout_weight=".5" android:padding="5dp"
+                        android:layout_height="wrap_content" android:layout_width="fill_parent"
+                        android:text="@string/profile" binding:onClick="viewProfile"
+                        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"   android:layout_marginBottom="2dp"/>
+                <Button android:layout_weight=".5" android:padding="5dp"
+                        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"   android:layout_marginBottom="2dp"
+                        android:layout_height="wrap_content" android:layout_width="fill_parent"
+                        android:text="@string/about" binding:onClick="about"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
