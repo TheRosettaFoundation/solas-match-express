@@ -3,22 +3,23 @@ package SolasMatch.Express.ViewModel;
 import SolasMatch.Express.Model.Login;
 import SolasMatch.Express.Model.User;
 import SolasMatch.Express.R;
-import android.content.Context;
-import android.graphics.Path;
-import android.text.AndroidCharacter;
+import SolasMatch.Express.View.MenuActivity;
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
-import gueei.binding.Command;
-import gueei.binding.DependentObservable;
-import gueei.binding.Observable;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import gueei.binding.Command;
+import gueei.binding.Observable;
 import gueei.binding.observables.StringObservable;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.net.URL;
+import java.net.URLConnection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -41,37 +42,81 @@ public class LoginViewModel extends ViewModel {
         this.user.set(user);
     }
 
+    public Observable<Bitmap> logo = new Observable<Bitmap>(Bitmap.class);
     public StringObservable email = new StringObservable("test1@example.com");
     public StringObservable password = new StringObservable("test");
-    public LoginViewModel(Context base) {
+
+    public LoginViewModel(Activity base) {
         super(base);
+        try {
+            logo.set(BitmapFactory.decodeStream(getAssets().open("logo.png")));
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+
+        }
     }
 
     public final Command login = new Command() {
+
         @Override
         public void Invoke(View view, Object... objects) {
+
             ObjectMapper mapper = new ObjectMapper();
-            Login login =null;
-            try {
-                login=(mapper.readValue(new URL(getString(R.string.base_webservice_url)+"/v0/login/"), Login.class));
-            } catch (IOException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-            }
-            if(login!=null){
-             login.setEmail(email.get());
-             login.setPass(password.get());
-            }else login= new Login();
-            Toast toast =Toast.makeText(getApplicationContext(), login.getEmail(), Toast.LENGTH_LONG);
+            Login login =new Login();
+            login.setEmail(email.get());
+            login.setPass(password.get());
+            try{
+                URL url = new URL(getString(R.string.base_webservice_url)+"/v0/login/");
+                URLConnection conn = url.openConnection();
+                conn.setDoOutput(true);
+                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
+                mapper.writeValue(wr,login);
+                user.set(mapper.readValue(conn.getInputStream(),User.class));
+                wr.close();
+            }catch (Exception e){}
+
+            String message = getString(R.string.login_success);
+            if(user.isNull()) message = getString(R.string.login_failure);
+
+            Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER,0,0);
             toast.show();
+            if(!user.isNull()){
+                ((Activity)getBaseContext()).finish();
+                getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
+            }
         }
     };
+
     public final Command register = new Command() {
         @Override
         public void Invoke(View view, Object... objects) {
-            Toast toast =Toast.makeText(getApplicationContext(), "register triggered", Toast.LENGTH_LONG);
+            ObjectMapper mapper = new ObjectMapper();
+            Login login = new Login();
+            login.setEmail(email.get());
+            login.setPass(password.get());
+            try{
+                URL url = new URL(getString(R.string.base_webservice_url)+"/v0/register/");
+                URLConnection conn = url.openConnection();
+                conn.setDoOutput(true);
+                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
+                mapper.writeValue(wr,login);
+                user.set(mapper.readValue(conn.getInputStream(),User.class));
+                wr.close();
+            }catch (Exception e){}
+
+            String message = getString(R.string.register_success);
+            if(user.isNull()) message = getString(R.string.register_failure);
+
+            Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER,0,0);
             toast.show();
+            if(!user.isNull()){
+                SharedViewModel.getInstance(getApplicationContext()).getCurrentUser().set(user.get());
+                ((Activity)getBaseContext()).finish();
+                getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
+            }
+
         }
     };
 
