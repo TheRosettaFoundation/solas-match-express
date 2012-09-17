@@ -13,8 +13,8 @@
                     android:textStyle="bold"/>
         <ImageView  android:layout_width="160dp" android:layout_height="120dp"
                     android:layout_gravity="center" android:layout_margin="5dp"
-                    android:padding="5dp" binding:source="logo">
-        </ImageView>
+                    android:padding="5dp" binding:source="logo"
+                    binding:backgroundColor="colour"/>
         <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
                     android:orientation="horizontal" android:layout_marginTop="15dp">
          <TextView android:layout_weight=".7" android:layout_margin="5dp" android:padding="5dp"

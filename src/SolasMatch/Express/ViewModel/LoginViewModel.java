@@ -8,12 +8,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import gueei.binding.Command;
 import gueei.binding.Observable;
+import gueei.binding.observables.IntegerObservable;
 import gueei.binding.observables.StringObservable;
 
 import java.io.BufferedInputStream;
@@ -22,6 +24,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -43,7 +46,7 @@ public class LoginViewModel extends ViewModel {
     public void setUser(User user) {
         this.user.set(user);
     }
-
+    public IntegerObservable colour = new IntegerObservable(Color.DKGRAY);
     public Observable<Bitmap> logo = new Observable<Bitmap>(Bitmap.class);
     public StringObservable email = new StringObservable("test1@example.com");
     public StringObservable password = new StringObservable("test");
@@ -80,15 +83,19 @@ public class LoginViewModel extends ViewModel {
                     conn.setDoOutput(true);// also sets the connect to post by default.
                     mapper.writeValue(new OutputStreamWriter(new BufferedOutputStream(conn.getOutputStream())), login);
                     user.set(mapper.readValue(new BufferedInputStream(conn.getInputStream()), User.class));
-                }catch (Exception e){}
+                }catch (Exception e){
+                    Logger.getAnonymousLogger().warning("login failed\n"+e.getMessage());
 
-                String message = getString(R.string.login_success);
-                if(user.isNull()) message = getString(R.string.login_failure);
+                }
+
+                String message = getString(R.string.loginSuccess);
+                if(user.isNull()) message = getString(R.string.loginFailure);
 
                 Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
                 toast.setGravity(Gravity.CENTER,0,0);
                 toast.show();
                 if(!user.isNull()){
+                    SharedViewModel.getInstance(getApplicationContext()).setCurrentUser(user.get());
                     ((Activity)getBaseContext()).finish();
                     getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
                 }
@@ -117,13 +124,13 @@ public class LoginViewModel extends ViewModel {
                     mapper.writeValue(new OutputStreamWriter(new BufferedOutputStream(conn.getOutputStream())), login);
                     user.set(mapper.readValue(new BufferedInputStream(conn.getInputStream()), User.class));
                 }catch (Exception e){}
-                String message = getString(R.string.register_success);
-                if(user.isNull()) message = getString(R.string.register_failure);
+                String message = getString(R.string.registerSuccess);
+                if(user.isNull()) message = getString(R.string.registerFailure);
                 Toast toast =Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
                 toast.setGravity(Gravity.CENTER,0,0);
                 toast.show();
                 if(!user.isNull()){
-                    SharedViewModel.getInstance(getApplicationContext()).getCurrentUser().set(user.get());
+                    SharedViewModel.getInstance(getApplicationContext()).setCurrentUser(user.get());
                     ((Activity)getBaseContext()).finish();
                     getBaseContext().startActivity(new Intent(getBaseContext(), MenuActivity.class));
                 }

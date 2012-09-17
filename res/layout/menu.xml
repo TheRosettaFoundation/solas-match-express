@@ -9,7 +9,7 @@
         <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
                        android:orientation="vertical" >
             <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
-                        android:text="@string/menu_message" android:gravity="center"
+                        android:text="@string/menuMessage" android:gravity="center"
                         android:layout_margin="5dp" android:padding="5dp"
                         android:textStyle="bold"/>
             <LinearLayout  android:layout_width="fill_parent" android:layout_height="100dp"
@@ -22,7 +22,7 @@
                                 android:textStyle="bold" android:layout_weight=".6"/>
                     <Button android:layout_weight=".4" android:padding="1dp"
                             android:layout_height="fill_parent" android:layout_width="fill_parent"
-                            android:text="@string/view_task" binding:onClick="viewFeturedTask"
+                            android:text="@string/viewTask" binding:onClick="viewFeturedTask"
                             android:gravity="center"/>
 
                 </LinearLayout>
@@ -38,14 +38,14 @@
                            android:gravity="center_horizontal">
                 <Button android:layout_weight=".5" android:padding="5dp"
                         android:layout_height="wrap_content" android:layout_width="fill_parent"
-                        android:text="@string/search_for_tasks" binding:onClick="searchForTasks"
+                        android:text="@string/searchForTasks" binding:onClick="searchForTasks"
                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
                         android:layout_marginTop="2dp"   android:layout_marginBottom="2dp"/>
                 <Button android:layout_weight=".5" android:padding="5dp"
                         android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
                         android:layout_marginTop="2dp"   android:layout_marginBottom="2dp"
                         android:layout_height="wrap_content" android:layout_width="fill_parent"
-                        android:text="@string/search_for_orgs" binding:onClick="searchForOrgs"/>
+                        android:text="@string/searchForOrgs" binding:onClick="searchForOrgs"/>
                 <Button android:layout_weight=".5" android:padding="5dp"
                         android:layout_height="wrap_content" android:layout_width="fill_parent"
                         android:text="@string/profile" binding:onClick="viewProfile"

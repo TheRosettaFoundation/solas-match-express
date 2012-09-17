@@ -15,14 +15,18 @@ public class SharedViewModel extends ViewModel {
     private static SharedViewModel instance = null;
     private SharedViewModel(Context base) {
         super(base);
+        currentUser= new Observable<User>(User.class);
     }
     public static SharedViewModel getInstance(Context base){
         return instance==null?(instance=new SharedViewModel(base)):instance;
     }
-    private Observable<User> currentUser = new Observable<User>(User.class);
+    private Observable<User> currentUser;
 
-    public Observable<User> getCurrentUser() {
-        return currentUser;
+    public User getCurrentUser() {
+        return currentUser.get();
     }
 
+    public void setCurrentUser(User currentUser) {
+        this.currentUser.set(currentUser);
+    }
 }

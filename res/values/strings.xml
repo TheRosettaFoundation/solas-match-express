@@ -6,17 +6,19 @@
     <string name="login">Login</string>
     <string name="email">Email:</string>
     <string name="pass">Password:</string>
-    <string name="base_webservice_url">http://193.1.97.45/SOLAS-Match/api</string>
-    <string name="login_success">Login was successful.</string>
-    <string name="login_failure">Login was unsuccessful.</string>
-    <string name="register_success">Registration was successful.</string>
-    <string name="register_failure">Registration was unsuccessful.</string>
-    <string name="translation_message">Translation tasks Claim a task, translate it, upload it</string>
-    <string name="menu_message">Claim a task, translate it, upload it</string>
+    <string name="loginSuccess">Login was successful.</string>
+    <string name="loginFailure">Login was unsuccessful.</string>
+    <string name="registerSuccess">Registration was successful.</string>
+    <string name="registerFailure">Registration was unsuccessful.</string>
+    <string name="translationMessage">Translation tasks Claim a task, translate it, upload it</string>
+    <string name="menuMessage">Claim a task, translate it, upload it</string>
     <string name="featured">Featured Task:</string>
-    <string name="view_task">View Task</string>
-    <string name="search_for_tasks">Search for Tasks</string>
-    <string name="search_for_orgs">Search for organisations</string>
+    <string name="viewTask">View Task</string>
+    <string name="searchForTasks">Search for Tasks</string>
+    <string name="searchForOrgs">Search for organisations</string>
     <string name="profile">Profile</string>
     <string name="about">About</string>
+    <string name="UserDetailsMessage">View user details here</string>
+    <string name="publicDisplayName">Public display name:</string>
+
 </resources>

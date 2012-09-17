@@ -17,26 +17,30 @@ public final class R {
     public static final class layout {
         public static final int login=0x7f020000;
         public static final int menu=0x7f020001;
+        public static final int profile=0x7f020002;
     }
     public static final class string {
-        public static final int about=0x7f050012;
+        public static final int UserDetailsMessage=0x7f050012;
+        public static final int about=0x7f050011;
         public static final int app_name=0x7f050000;
-        public static final int base_webservice_url=0x7f050006;
+        public static final int base_webservice_url=0x7f050014;
         public static final int email=0x7f050004;
-        public static final int featured=0x7f05000d;
+        public static final int featured=0x7f05000c;
+        public static final int gravatar_avatar_url=0x7f050015;
         public static final int login=0x7f050003;
-        public static final int login_failure=0x7f050008;
-        public static final int login_success=0x7f050007;
-        public static final int menu_message=0x7f05000c;
+        public static final int loginFailure=0x7f050007;
+        public static final int loginSuccess=0x7f050006;
+        public static final int menuMessage=0x7f05000b;
         public static final int pass=0x7f050005;
-        public static final int profile=0x7f050011;
+        public static final int profile=0x7f050010;
+        public static final int publicDisplayName=0x7f050013;
         public static final int register=0x7f050002;
-        public static final int register_failure=0x7f05000a;
-        public static final int register_success=0x7f050009;
-        public static final int search_for_orgs=0x7f050010;
-        public static final int search_for_tasks=0x7f05000f;
-        public static final int translation_message=0x7f05000b;
-        public static final int view_task=0x7f05000e;
+        public static final int registerFailure=0x7f050009;
+        public static final int registerSuccess=0x7f050008;
+        public static final int searchForOrgs=0x7f05000f;
+        public static final int searchForTasks=0x7f05000e;
+        public static final int translationMessage=0x7f05000a;
+        public static final int viewTask=0x7f05000d;
         public static final int welcome=0x7f050001;
     }
     public static final class xml {
