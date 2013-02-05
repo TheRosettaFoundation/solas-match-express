@@ -10,40 +10,59 @@ package SolasMatch.Express;
 public final class R {
     public static final class attr {
     }
+    public static final class drawable {
+        public static final int logo=0x7f020000;
+    }
     public static final class id {
-        public static final int emailFeild=0x7f040001;
-        public static final int passwordFeild=0x7f040000;
+        public static final int emailFeild=0x7f050001;
+        public static final int passwordFeild=0x7f050000;
     }
     public static final class layout {
-        public static final int login=0x7f020000;
-        public static final int menu=0x7f020001;
-        public static final int profile=0x7f020002;
+        public static final int arraylist_item=0x7f030000;
+        public static final int login=0x7f030001;
+        public static final int menu=0x7f030002;
+        public static final int profile=0x7f030003;
+        public static final int task=0x7f030004;
     }
     public static final class string {
-        public static final int UserDetailsMessage=0x7f050012;
-        public static final int about=0x7f050011;
-        public static final int app_name=0x7f050000;
-        public static final int base_webservice_url=0x7f050014;
-        public static final int email=0x7f050004;
-        public static final int featured=0x7f05000c;
-        public static final int gravatar_avatar_url=0x7f050015;
-        public static final int login=0x7f050003;
-        public static final int loginFailure=0x7f050007;
-        public static final int loginSuccess=0x7f050006;
-        public static final int menuMessage=0x7f05000b;
-        public static final int pass=0x7f050005;
-        public static final int profile=0x7f050010;
-        public static final int publicDisplayName=0x7f050013;
-        public static final int register=0x7f050002;
-        public static final int registerFailure=0x7f050009;
-        public static final int registerSuccess=0x7f050008;
-        public static final int searchForOrgs=0x7f05000f;
-        public static final int searchForTasks=0x7f05000e;
-        public static final int translationMessage=0x7f05000a;
-        public static final int viewTask=0x7f05000d;
-        public static final int welcome=0x7f050001;
+        public static final int UserDetailsMessage=0x7f060012;
+        public static final int about=0x7f060011;
+        public static final int app_name=0x7f060000;
+        public static final int base_webservice_url=0x7f06001f;
+        public static final int bio=0x7f060014;
+        public static final int claimTask=0x7f06001c;
+        public static final int claimTaskFailure=0x7f06001e;
+        public static final int claimTaskSucess=0x7f06001d;
+        public static final int created=0x7f06001b;
+        public static final int email=0x7f060004;
+        public static final int featured=0x7f06000c;
+        public static final int gravatar_avatar_url=0x7f060020;
+        public static final int impact=0x7f060019;
+        public static final int login=0x7f060003;
+        public static final int loginFailure=0x7f060007;
+        public static final int loginSuccess=0x7f060006;
+        public static final int menuMessage=0x7f06000b;
+        public static final int orgName=0x7f06001a;
+        public static final int orgUrl=0x7f060022;
+        public static final int pass=0x7f060005;
+        public static final int profile=0x7f060010;
+        public static final int publicDisplayName=0x7f060013;
+        public static final int register=0x7f060002;
+        public static final int registerFailure=0x7f060009;
+        public static final int registerSuccess=0x7f060008;
+        public static final int searchForOrgs=0x7f06000f;
+        public static final int searchForTasks=0x7f06000e;
+        public static final int sourceLanguage=0x7f060016;
+        public static final int tags=0x7f060018;
+        public static final int targetLanguage=0x7f060017;
+        public static final int taskUrl=0x7f060021;
+        public static final int translationMessage=0x7f06000a;
+        public static final int translationTask=0x7f060015;
+        public static final int userUrl=0x7f060023;
+        public static final int viewTask=0x7f06000d;
+        public static final int welcome=0x7f060001;
     }
     public static final class xml {
-        public static final int binding_data=0x7f030000;
+        public static final int binding_data=0x7f040000;
     }
 }

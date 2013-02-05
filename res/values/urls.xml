@@ -1,4 +1,7 @@
 <resources>
     <string name="base_webservice_url">http://193.1.97.45/SOLAS-Match/api</string>
     <string name="gravatar_avatar_url">http://www.gravatar.com/avatar</string>
+    <string name="taskUrl">http://193.1.97.45/SOLAS-Match/api/v0/tasks/</string>
+    <string name="orgUrl">http://193.1.97.45/SOLAS-Match/api/v0/orgs/</string>
+    <string name="userUrl">http://193.1.97.45/SOLAS-Match/api/v0/users/</string>
 </resources>

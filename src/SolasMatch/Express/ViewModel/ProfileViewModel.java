@@ -25,7 +25,9 @@ import java.util.logging.Logger;
 public class ProfileViewModel extends ViewModel {
     public Observable<Bitmap> gravitar = new Observable<Bitmap>(Bitmap.class);
     public StringObservable displayName= new StringObservable();
-    public IntegerObservable colour = new IntegerObservable(Color.DKGRAY);
+    public StringObservable bio= new StringObservable();
+    public IntegerObservable colour = new IntegerObservable(Color.rgb(50,0,50));
+    public IntegerObservable colour2 = new IntegerObservable(Color.DKGRAY);
     public ProfileViewModel(Activity base) {
         super(base);
        Thread thread = new Thread(new Runnable() {
@@ -34,6 +36,7 @@ public class ProfileViewModel extends ViewModel {
                try{
                    User user=SharedViewModel.getInstance(getApplicationContext()).getCurrentUser();
                    displayName.set(user.getDisplayName()==null?user.getEmail():user.getDisplayName());
+                   bio.set(user.getBiography());
                    URL url = new URL(getString(R.string.gravatar_avatar_url)+"/"+ md5(user.getEmail().toLowerCase().trim()));
                    URLConnection conn=url.openConnection();
                    gravitar.set(BitmapFactory.decodeStream(conn.getInputStream()));

@@ -20,5 +20,15 @@
     <string name="about">About</string>
     <string name="UserDetailsMessage">View user details here</string>
     <string name="publicDisplayName">Public display name:</string>
-
+    <string name="bio">Biography:</string>
+    <string name="translationTask">Translation task:</string>
+    <string name="sourceLanguage">Source Language:</string>
+    <string name="targetLanguage">Target Language:</string>
+    <string name="tags">Tags:</string>
+    <string name="impact">Impact:</string>
+    <string name="orgName">Organisation Name:</string>
+    <string name="created">Created Date:</string>
+    <string name="claimTask">Claim Task</string>
+    <string name="claimTaskSucess">Task claim sucessful</string>
+    <string name="claimTaskFailure">Task claim faild</string>
 </resources>

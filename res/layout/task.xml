@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:binding="http://www.gueei.com/android-binding/"
+              android:orientation="vertical"   android:gravity="center"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+<ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical">
+    <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                   android:orientation="vertical" >
+        <LinearLayout   android:layout_width="fill_parent" android:layout_height="30dp"
+                        android:orientation="horizontal" android:gravity="center"
+                        android:layout_marginTop="5dp" >
+            <TextView   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/translationTask"  android:layout_weight=".5"
+                    android:textStyle="bold" android:gravity="left"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/claimTask"  android:layout_weight=".5"
+                    android:padding="1dp" binding:onClick="claimTask"/>
+        </LinearLayout>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    binding:text="taskName" android:gravity="right"
+                    android:padding="5dp" android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:text="@string/sourceLanguage"
+                    android:padding="5dp"
+                    android:textStyle="bold" android:gravity="left"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    binding:text="sourceLanguage" android:gravity="right"
+                    android:padding="5dp" android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:text="@string/targetLanguage"
+                    android:padding="5dp"
+                    android:textStyle="bold" android:gravity="left"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    binding:text="targetLanguage" android:gravity="right"
+                    android:padding="5dp" android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:text="@string/created"
+                    android:padding="5dp"
+                    android:textStyle="bold" android:gravity="left"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    binding:text="created" android:gravity="right"
+                    android:padding="5dp" android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:text="@string/orgName"
+                    android:padding="5dp"
+                    android:textStyle="bold" android:gravity="left"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    binding:text="orgName" android:gravity="right"
+                    android:padding="5dp" android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:text="@string/impact"
+                    android:padding="5dp"
+                    android:textStyle="bold" android:gravity="left"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    binding:text="impact" android:gravity="right"
+                    android:padding="5dp" android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+        <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:text="@string/tags"
+                    android:padding="5dp"
+                    android:textStyle="bold" android:gravity="left"
+                    android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+
+        <ListView   android:layout_width="fill_parent" android:layout_height="75dp"
+                    android:gravity="right" android:padding="5dp"
+                    android:layout_marginLeft="5dp" binding:itemSource="tags"
+            	    binding:itemTemplate="@layout/arraylist_item">
+        </ListView>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

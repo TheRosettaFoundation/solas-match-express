@@ -14,11 +14,11 @@
                         android:textStyle="bold"/>
             <LinearLayout  android:layout_width="fill_parent" android:layout_height="100dp"
                            android:orientation="vertical" android:layout_marginTop="5dp">
-                <LinearLayout   android:layout_width="fill_parent" android:layout_height="25dp"
+                <LinearLayout   android:layout_width="fill_parent" android:layout_height="30dp"
                                 android:orientation="horizontal" android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp">
+                                android:layout_marginRight="10dp" android:gravity="center">
                     <TextView   android:layout_width="fill_parent" android:layout_height="fill_parent"
-                                android:text="@string/featured" android:gravity="left"
+                                android:text="@string/featured" android:gravity="center"
                                 android:textStyle="bold" android:layout_weight=".6"/>
                     <Button android:layout_weight=".4" android:padding="1dp"
                             android:layout_height="fill_parent" android:layout_width="fill_parent"
@@ -26,10 +26,11 @@
                             android:gravity="center"/>
 
                 </LinearLayout>
-                <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
-                            binding:text="feturedTask" android:gravity="right"
-                            android:layout_margin="5dp" android:padding="5dp"
-                            />
+                <TextView   android:layout_width="fill_parent" android:layout_height="fill_parent"
+                            binding:text="feturedTask" android:gravity="left"
+                            android:layout_marginTop="5dp" android:padding="5dp"
+                            android:layout_marginLeft="12dp" android:layout_marginRight="12dp"
+                            binding:backgroundColor="colour" />
 
             </LinearLayout>
 

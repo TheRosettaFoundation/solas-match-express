@@ -46,7 +46,7 @@ public class LoginViewModel extends ViewModel {
     public void setUser(User user) {
         this.user.set(user);
     }
-    public IntegerObservable colour = new IntegerObservable(Color.DKGRAY);
+    public IntegerObservable colour = new IntegerObservable(Color.GRAY);
     public Observable<Bitmap> logo = new Observable<Bitmap>(Bitmap.class);
     public StringObservable email = new StringObservable("test1@example.com");
     public StringObservable password = new StringObservable("test");

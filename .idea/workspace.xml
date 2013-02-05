@@ -3,7 +3,7 @@
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
       <GlobalState>
-        <option name="device" value="3.7in FWVGA slider" />
+        <option name="device" value="4.7in WXGA" />
         <option name="dockMode" value="" />
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-8" />
@@ -16,13 +16,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4c8fd55-caf8-4397-8968-936d19adf2bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/profile.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/urls.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/View/ProfileActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/arraylist_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/task.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/View/ViewTaskActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/TaskDetailsViewModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/Solas-Match-Express.apk.res" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/Solas-Match-Express.apk.res" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/Solas-Match-Express.apk.unaligned" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/Solas-Match-Express.apk.unaligned" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/Solas-Match-Express.apk" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/Solas-Match-Express.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$id.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$layout.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$string.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$xml.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/R$xml.class" />
@@ -30,18 +32,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/LoginViewModel$1.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/LoginViewModel$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/LoginViewModel$2.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/LoginViewModel$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/LoginViewModel.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/LoginViewModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/ViewModel.class" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/SolasMatch/Express/ViewModel/ViewModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Solas-Match-Express/classes.dex" afterPath="$PROJECT_DIR$/out/production/Solas-Match-Express/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solas-Match-Express.iml" afterPath="$PROJECT_DIR$/Solas-Match-Express.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/SolasMatch/Express/R.java" afterPath="$PROJECT_DIR$/gen/SolasMatch/Express/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/login.xml" afterPath="$PROJECT_DIR$/res/layout/login.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/menu.xml" afterPath="$PROJECT_DIR$/res/layout/menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/profile.xml" afterPath="$PROJECT_DIR$/res/layout/profile.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/urls.xml" afterPath="$PROJECT_DIR$/res/values/urls.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/SharedViewModel.java" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/SharedViewModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ViewModel.java" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ViewModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java" afterPath="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java" />
     </list>
     <ignored path="Solas-Match-Express.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +67,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java" line="36" class="SolasMatch.Express.ViewModel.MenuViewModel$1" package="SolasMatch.Express.ViewModel">
+      <breakpoint url="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/TaskDetailsViewModel.java" line="111" class="SolasMatch.Express.ViewModel.TaskDetailsViewModel$1" package="SolasMatch.Express.ViewModel">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -78,20 +80,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java" line="47" class="SolasMatch.Express.ViewModel.MenuViewModel$1" package="SolasMatch.Express.ViewModel">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java" line="77" class="SolasMatch.Express.ViewModel.MenuViewModel$4" package="SolasMatch.Express.ViewModel">
+      <breakpoint url="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/TaskDetailsViewModel.java" line="67" class="SolasMatch.Express.ViewModel.TaskDetailsViewModel" package="SolasMatch.Express.ViewModel">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -145,64 +134,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MenuViewModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java">
+      <file leaf-file-name="TaskDetailsViewModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/TaskDetailsViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/profile.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="24" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="8" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileViewModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="4" selection-start="880" selection-end="950" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="61" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.9574468">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginViewModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="74" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/menu.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="92" selection-start="1921" selection-end="1936" vertical-scroll-proportion="0.0">
+            <state line="119" column="0" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -211,7 +146,79 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
+            <state line="3" column="32" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/profile.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="60" selection-start="930" selection-end="962" vertical-scroll-proportion="0.20205921">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/urls.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="70" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/task.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="74" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="61" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/menu.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="87" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuViewModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="0" selection-start="3803" selection-end="3803" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/View/MenuActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginViewModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="3" selection-start="1993" selection-end="4047" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -230,22 +237,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/xml/binding_data.xml" />
-        <option value="$PROJECT_DIR$/gen/SolasMatch/Express/R.java" />
-        <option value="$PROJECT_DIR$/src/SolasMatch/Express/View/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/src/SolasMatch/Express/View/MenuActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/urls.xml" />
         <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ViewModel.java" />
         <option value="$PROJECT_DIR$/src/SolasMatch/Express/View/ProfileActivity.java" />
         <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/SharedViewModel.java" />
-        <option value="$PROJECT_DIR$/res/layout/menu.xml" />
-        <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/login.xml" />
-        <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java" />
+        <option value="$PROJECT_DIR$/src/SolasMatch/Express/View/ViewTaskActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/profile.xml" />
+        <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java" />
+        <option value="$PROJECT_DIR$/res/layout/arraylist_item.xml" />
+        <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java" />
+        <option value="$PROJECT_DIR$/res/layout/menu.xml" />
         <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java" />
+        <option value="$PROJECT_DIR$/res/values/urls.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/task.xml" />
+        <option value="$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/TaskDetailsViewModel.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -255,7 +262,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-3" />
     <option name="width" value="1286" />
-    <option name="height" value="777" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -283,30 +290,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solas-Match-Express" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solas-Match-Express" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -440,6 +423,28 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solas-Match-Express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solas_match_express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -457,11 +462,35 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solas-Match-Express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solas-Match-Express" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/SolasMatch/Express" />
     <property name="OverrideImplement.combined" value="true" />
@@ -471,17 +500,21 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="DEBUGGABLE_DEVICE" value="emulator-5554 (test)" />
+    <property name="DEBUGGABLE_DEVICE" value="S5570e0bb9d5b" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="DEBUGGABLE_PROCESS" value="SolasMatch.Express" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/drawable" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="SolasMatch.Express.View" />
       <recent name="SolasMatch.Express.ViewModel" />
     </key>
   </component>
@@ -531,6 +564,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -556,24 +607,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -717,29 +750,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1286" height="777" extended-state="6" />
+    <frame x="-3" y="0" width="1286" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284091" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35064936" sideWeight="0.6715909" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284091" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67142856" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3996328" sideWeight="0.67045456" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16477273" sideWeight="0.67142856" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2778626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16396104" sideWeight="0.7227273" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27727273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2859375" sideWeight="0.7221374" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -807,86 +840,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../android-sdk-linux/platforms/android-8/android.jar!/android/content/Context.class">
+    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="34" selection-start="2975" selection-end="2975" vertical-scroll-proportion="0.0" />
+        <state line="29" column="75" selection-start="1017" selection-end="1089" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../android-sdk-linux/platforms/android-8/android.jar!/android/app/Instrumentation.class">
+    <entry file="file://$PROJECT_DIR$/res/layout/arraylist_item.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="19" selection-start="589" selection-end="589" vertical-scroll-proportion="0.33333334" />
+        <state line="7" column="63" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../android-sdk-linux/platforms/android-8/android.jar!/android/content/ContextWrapper.class">
+    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/Model/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="35" selection-start="935" selection-end="935" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/android-binding-v30-0.52.jar!/gueei/binding/Observable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.44444445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/SharedViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/View/MenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="410" selection-end="410" vertical-scroll-proportion="0.3416149" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/Model/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="13" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.92957747" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="727" selection-end="727" vertical-scroll-proportion="0.92957747" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/profile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="24" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.0" />
+        <state line="10" column="13" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/login.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/ProfileViewModel.java">
+    <entry file="jar://$PROJECT_DIR$/libs/android-binding-v30-0.52.jar!/gueei/binding/Command.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="880" selection-end="950" vertical-scroll-proportion="0.0" />
+        <state line="14" column="25" selection-start="568" selection-end="568" vertical-scroll-proportion="0.4276316" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java">
+    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/View/ViewTaskActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="74" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0" />
+        <state line="17" column="13" selection-start="469" selection-end="469" vertical-scroll-proportion="0.2920354" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/menu.xml">
+    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/TaskDetailsViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="92" selection-start="1921" selection-end="1936" vertical-scroll-proportion="0.0" />
+        <state line="119" column="0" selection-start="5155" selection-end="5155" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0">
+        <state line="3" column="32" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/urls.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="70" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/task.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="74" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="61" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.9574468">
+        <state line="32" column="61" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="87" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/MenuViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="3803" selection-end="3803" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/View/MenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SolasMatch/Express/ViewModel/LoginViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="3" selection-start="1993" selection-end="4047" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/profile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="60" selection-start="930" selection-end="962" vertical-scroll-proportion="0.20205921">
           <folding />
         </state>
       </provider>
@@ -897,6 +930,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -908,7 +942,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Android</last-edited>
+          <last-edited>Android (Solas-Match-Express)|Android</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -931,7 +965,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>Android 2.2 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -948,7 +982,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

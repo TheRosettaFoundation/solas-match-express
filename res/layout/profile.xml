@@ -23,25 +23,29 @@
                             android:layout_margin="5dp" android:padding="5dp"
                             android:gravity="right"/>
             </LinearLayout>
-            <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
-                        android:text="@string/publicDisplayName"
-                        android:layout_marginTop="5dp" android:padding="5dp"
-                        android:textStyle="bold" android:gravity="left"
-                        android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
-            <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
-                        binding:text="displayName" android:gravity="right"
-                        android:padding="5dp" android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-            <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
-                        android:text="@string/publicDisplayName"
-                        android:padding="5dp"
-                        android:textStyle="bold" android:gravity="left"
-                        android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
-            <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
-                        binding:text="displayName" android:gravity="right"
-                        android:padding="5dp" android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"/>
-
+            <LinearLayout   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                            android:orientation="vertical" android:gravity="center_vertical"
+                            android:layout_margin="5dp" android:padding="5dp"
+                            binding:backgroundColor="colour2">
+                <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                            android:text="@string/publicDisplayName"
+                            android:layout_marginTop="5dp" android:padding="5dp"
+                            android:textStyle="bold" android:gravity="left"
+                            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                            binding:text="displayName" android:gravity="right"
+                            android:padding="5dp" android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+                <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                            android:text="@string/bio"
+                            android:padding="5dp"
+                            android:textStyle="bold" android:gravity="left"
+                            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                <TextView   android:layout_width="fill_parent" android:layout_height="wrap_content"
+                            binding:text="bio" android:gravity="right"
+                            android:padding="5dp" android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
